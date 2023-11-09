@@ -1,0 +1,260 @@
+/*General Styles*/
+
+html {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    background-image: url("../img/background_green.jpg");
+    background-size: stretch;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.black {
+    color: black;
+}
+
+/*Navbar*/
+
+nav {
+    display: flex;
+    position: fixed;
+    top: .5rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 95%;
+    margin: 0 auto;
+    min-height: 6.25rem;
+    border: 1px solid white;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    background-color: #6ac92e;
+    color: white;
+    align-items: center;
+}
+
+nav h2 {
+    font-weight: bold;
+    float: left;
+    margin-left: 1rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0 2rem 0 auto;
+}
+
+nav ul a {
+    text-decoration: underline;
+    color: white;
+}
+
+nav li {
+    padding: 0 .75rem;
+}
+
+/*Main Section*/
+
+main {    
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 7rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+/*About Me*/
+
+.main {
+    display: flex;
+    justify-items: space-between;
+    max-height: fit-content;
+}
+
+
+.aboutme {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    max-height: max-content;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem 2rem 1rem 2rem;
+    margin: .5rem;
+}
+
+.aboutme.context {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    flex: 1;
+    height: max-content;
+}
+
+.aboutme.images {
+    flex: 2;
+    flex-flow: row wrap;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.images img {
+    width: 45%;
+    height: auto;
+    border-radius: 50%;
+    margin: .75rem 0;
+}
+
+
+.images .vorhernachher {
+    border-radius: 7rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .aboutme.images {
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .aboutme.images img {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .main {
+        flex-flow: column wrap;
+    }
+
+    .aboutme.images img {
+        width: 65%;
+    }
+
+    .mobilehidden {
+        display: none;
+    }
+
+    nav ul {
+        margin: auto;
+    }
+
+}
+
+
+/*Services*/
+
+.services {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
+.services h1 {
+    margin-left: 2rem;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.challenge {
+    flex-direction: row-reverse;
+}
+
+figure img {
+    height: 20rem;
+    border-radius: 50%;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 580px) {
+    figure, .challenge {
+        flex-direction: column;
+    }
+
+    figure img {
+        width: 10rem;
+        height: auto;
+    }
+}
+
+/*Products*/
+
+.products {
+    display: flex;
+    width: 95%;
+    margin: 2rem auto;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row wrap;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
+.products h1 {
+    width: 100%;
+    justify-self: center;
+    margin-left: 2rem;
+}
+
+.products figure {
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.products img {
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+/*Contact*/
+
+.contact {
+    width: 80%;
+    max-width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.contact h4 {
+    margin: 1rem auto 0.5rem auto;
+}
+
+.contact input {
+    width: 13rem;
+    margin: 0 auto;
+}
+
+.contact button {
+    margin: 2rem auto;
+    width: 8rem;
+}
+
+footer {
+    position: relative;
+    top: 7rem;
+    margin: 3rem;
+    padding-bottom: 1rem;
+}
